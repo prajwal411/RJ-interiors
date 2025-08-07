@@ -15,7 +15,7 @@ const stats = [
 
 const achievements = [
   {
-    title: "State-of-the-Art Manufacturing",
+    title: "In-House Manufacturing",
     description: "In-house manufacturing units in Bangalore equipped with latest technology",
     image: "/images/about-team.png",
   },
@@ -89,7 +89,7 @@ export default function About() {
                 </p>
                 <p>
                   Today, we serve residential, commercial, and industrial clients across India, delivering
-                  custom-designed solutions that exceed expectations. Our state-of-the-art manufacturing facilities are
+                  custom-designed solutions that exceed expectations. Our In-House Manufacturing facilities are
                   equipped with the latest technology, enabling us to produce high-quality products with precision and
                   efficiency.
                 </p>

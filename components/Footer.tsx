@@ -45,7 +45,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-text-secondary mb-6 text-sm leading-relaxed">
-              Crafting Durability with Elegance. Specialists in GRC & FRP solutions with state-of-the-art manufacturing
+              Crafting Durability with Elegance. Specialists in GRC & FRP solutions with In-House Manufacturing
               in Bangalore since 2008.
             </p>
             <div className="flex space-x-4">

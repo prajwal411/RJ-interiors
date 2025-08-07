@@ -13,7 +13,7 @@ const slides = [
     title: "Crafting Durability with Elegance",
     subtitle: "GRC & FRP Experts in Bangalore",
     description:
-      "State-of-the-art manufacturing units delivering custom-designed architectural elements with strength, creativity, and reliability.",
+      " In-House Manufacturing units delivering custom-designed architectural elements with strength, creativity, and reliability.",
     cta: "Explore GRC Products",
     link: "#products",
   },

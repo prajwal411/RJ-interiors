@@ -63,7 +63,7 @@ const whyChooseUs = [
   {
     icon: "🛠️",
     title: "Premium Craftsmanship",
-    description: "State-of-the-art manufacturing with attention to detail",
+    description: " In-House Manufacturing with attention to detail",
   },
   {
     icon: "🕐",
@@ -114,7 +114,6 @@ export default function Services() {
                       fill
                       className="object-cover transition-transform duration-300 hover:scale-105"
                     />
-                    <div className={`absolute inset-0 bg-gradient-to-r ${service.color} opacity-80`} />
                     <div className="absolute top-4 right-4">
                       <Link
                         href={`https://${service.website}`}

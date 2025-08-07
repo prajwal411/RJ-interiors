@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "RJ INTERIORS & CONSTRUCTIONS - GRC & FRP Experts in Bangalore",
   description:
-    "Crafting Durability with Elegance. Specialists in Glass Fiber Reinforced Concrete (GRC/GFRC) and Fiber Reinforced Plastic (FRP) solutions with state-of-the-art manufacturing in Bangalore.",
+    "Crafting Durability with Elegance. Specialists in Glass Fiber Reinforced Concrete (GRC/GFRC) and Fiber Reinforced Plastic (FRP) solutions with  In-House Manufacturing in Bangalore.",
   keywords:
     "GRC Bangalore, FRP Bangalore, Glass Fiber Reinforced Concrete, Fiber Reinforced Plastic, Construction, Interiors, Architectural Elements, Jalis, Domes, Columns",
   authors: [{ name: "RJ INTERIORS & CONSTRUCTIONS" }],

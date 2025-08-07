@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
           initial={{ opacity: 0, scale: 0.8, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 20 }}
-          className="fixed bottom-24 right-6 z-50"
+          className="fixed bottom-6 md:bottom-24 right-6 z-50"
         >
           <div className="relative">
             {/* Tooltip */}
@@ -58,9 +58,9 @@ export default function WhatsAppButton() {
               onMouseLeave={() => setShowTooltip(false)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="bg-green-500 hover:bg-green-600 text-white p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
-              <MessageCircle className="h-6 w-6" />
+              <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
 
               {/* Pulse animation */}
               <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>

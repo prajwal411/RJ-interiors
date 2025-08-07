@@ -18,16 +18,17 @@ export default function Navbar() {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false)
-
-    // Smooth scroll to section
+    // Smooth scroll to section after menu closes (especially for mobile)
     if (href.startsWith("#")) {
-      const element = document.querySelector(href)
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        })
-      }
+      setTimeout(() => {
+        const element = document.querySelector(href)
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          })
+        }
+      }, 300) // Delay to allow menu to close
     }
   }
 
