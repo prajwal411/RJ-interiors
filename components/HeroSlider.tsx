@@ -166,19 +166,25 @@ export default function HeroSlider() {
             {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
           </button>
 
-          {/* Slide Indicators */}
-<div className="flex space-x-2">
-{slides.map((_, index) => (
-  <button
-    key={index}
-    onClick={() => setCurrentSlide(index)}
-    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-      index === currentSlide ? "bg-gold-500 w-2" : "bg-text-muted"
-    }`}
-    style={{ minWidth: '2px', minHeight: '2px' }}
-  />
-))}
-</div>
+                    {/* Slide Indicators */}
+          <div className="flex space-x-2">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`transition-all duration-300 ${
+                  index === currentSlide ? "bg-gold-500" : "bg-text-muted"
+                }`}
+                style={{
+                  width: index === currentSlide ? '16px' : '8px',
+                  height: '8px',
+                  borderRadius: index === currentSlide ? '4px' : '50%',
+                  minWidth: '2px',
+                  minHeight: '2px'
+                }}
+              />
+            ))}
+          </div>
 
           {/* Progress Bar */}
           <div className="w-20 h-1 bg-dark-accent rounded-full overflow-hidden">
