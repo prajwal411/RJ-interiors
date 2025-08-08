@@ -102,8 +102,8 @@ export default function Partners() {
             <div className="inline-block px-4 py-2 bg-gold-500 text-dark-primary rounded-full text-sm font-medium mb-4">
               Our Network
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-text-primary">Trusted Partners & Clients</h2>
-            <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-text-primary">Trusted Partners & Clients</h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary max-w-2xl sm:max-w-3xl mx-auto px-2">
               We're proud to work with leading developers, contractors, and government organizations across India,
               delivering excellence in every project.
             </p>
