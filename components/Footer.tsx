@@ -34,7 +34,7 @@ export default function Footer() {
     <footer id="contact" className="bg-dark-deep text-white">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center space-x-3 mb-6">

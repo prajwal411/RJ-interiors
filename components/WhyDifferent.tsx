@@ -80,8 +80,8 @@ export default function WhyDifferent() {
             <div className="inline-block px-6 py-3 bg-gold-500 text-dark-primary rounded-full text-sm font-bold mb-6 shadow-lg">
               Our Advantage
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-text-primary">Why We Are Different</h2>
-            <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-text-primary">Why We Are Different</h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary max-w-2xl sm:max-w-3xl mx-auto px-2">
               What sets RJ INTERIORS & CONSTRUCTIONS apart in the competitive construction industry. Our commitment to
               excellence drives everything we do.
             </p>
@@ -89,7 +89,7 @@ export default function WhyDifferent() {
         </FadeIn>
 
         {/* Differentiators Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 md:mb-16">
           {differentiators.map((item, index) => (
             <FadeIn key={item.title} delay={index * 0.1}>
               <motion.div

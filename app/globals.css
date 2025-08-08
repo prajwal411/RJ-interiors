@@ -432,3 +432,81 @@ body {
 .gradient-dark {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
 }
+
+/* Fluid responsive design - display size independent */
+.container {
+  padding-left: clamp(1rem, 4vw, 2rem);
+  padding-right: clamp(1rem, 4vw, 2rem);
+}
+
+/* Fluid typography */
+.fluid-text-xs { font-size: clamp(0.75rem, 2vw, 0.875rem); }
+.fluid-text-sm { font-size: clamp(0.875rem, 2.5vw, 1rem); }
+.fluid-text-base { font-size: clamp(1rem, 3vw, 1.125rem); }
+.fluid-text-lg { font-size: clamp(1.125rem, 3.5vw, 1.25rem); }
+.fluid-text-xl { font-size: clamp(1.25rem, 4vw, 1.5rem); }
+.fluid-text-2xl { font-size: clamp(1.5rem, 5vw, 1.875rem); }
+.fluid-text-3xl { font-size: clamp(1.875rem, 6vw, 2.25rem); }
+.fluid-text-4xl { font-size: clamp(2.25rem, 7vw, 3rem); }
+.fluid-text-5xl { font-size: clamp(3rem, 8vw, 4rem); }
+.fluid-text-6xl { font-size: clamp(4rem, 10vw, 5rem); }
+
+/* Fluid spacing */
+.fluid-p { padding: clamp(1rem, 3vw, 2rem); }
+.fluid-px { padding-left: clamp(1rem, 3vw, 2rem); padding-right: clamp(1rem, 3vw, 2rem); }
+.fluid-py { padding-top: clamp(1rem, 3vw, 2rem); padding-bottom: clamp(1rem, 3vw, 2rem); }
+.fluid-m { margin: clamp(1rem, 3vw, 2rem); }
+.fluid-mx { margin-left: clamp(1rem, 3vw, 2rem); margin-right: clamp(1rem, 3vw, 2rem); }
+.fluid-my { margin-top: clamp(1rem, 3vw, 2rem); margin-bottom: clamp(1rem, 3vw, 2rem); }
+
+/* Fluid gaps */
+.fluid-gap { gap: clamp(0.5rem, 2vw, 1.5rem); }
+.fluid-gap-sm { gap: clamp(0.25rem, 1vw, 0.75rem); }
+.fluid-gap-lg { gap: clamp(1rem, 4vw, 2rem); }
+
+/* Fluid grid columns */
+.fluid-grid-1 { grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 100%, 400px), 1fr)); }
+.fluid-grid-2 { grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 50%, 500px), 1fr)); }
+.fluid-grid-3 { grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 33%, 400px), 1fr)); }
+.fluid-grid-4 { grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 25%, 300px), 1fr)); }
+
+/* Improve touch targets for all screen sizes */
+button, a {
+  min-height: clamp(32px, 6vw, 44px);
+  min-width: clamp(32px, 6vw, 44px);
+}
+
+/* Optimize text for all screen sizes */
+p {
+  line-height: 1.6;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+/* Improve form elements */
+input, textarea, select {
+  font-size: clamp(14px, 3vw, 16px); /* Prevents zoom on iOS */
+}
+
+/* Fluid container max-widths */
+.fluid-container-sm { max-width: clamp(300px, 90vw, 500px); }
+.fluid-container-md { max-width: clamp(500px, 90vw, 800px); }
+.fluid-container-lg { max-width: clamp(800px, 90vw, 1200px); }
+.fluid-container-xl { max-width: clamp(1200px, 90vw, 1400px); }
+
+/* Touch-friendly hover states */
+@media (hover: hover) {
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Mobile-specific animations */
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-fade-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+}

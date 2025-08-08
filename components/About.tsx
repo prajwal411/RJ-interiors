@@ -46,8 +46,8 @@ export default function About() {
             <div className="inline-block px-6 py-3 bg-gold-500 text-dark-primary rounded-full text-sm font-bold mb-6 shadow-lg">
               About Us
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-text-primary">Crafting Excellence Since 2008</h2>
-            <p className="text-lg md:text-xl text-text-secondary max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-text-primary">Crafting Excellence Since 2008</h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto px-2">
               RJ Interiors & Constructions (RJIC) specializes in Glass Fiber Reinforced Concrete (GRC/GFRC) and Fiber
               Reinforced Plastic (FRP) solutions. With state-of-the-art in-house manufacturing units in Bangalore, we
               deliver custom-designed architectural elements with strength, creativity, and reliability.
@@ -56,7 +56,7 @@ export default function About() {
         </FadeIn>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16">
           {stats.map((stat, index) => (
             <FadeIn key={stat.label} direction="up" delay={index * 0.1}>
               <div className="text-center p-6 bg-dark-secondary rounded-xl shadow-lg border border-dark-accent">

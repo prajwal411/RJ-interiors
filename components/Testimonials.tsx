@@ -89,8 +89,8 @@ export default function Testimonials() {
             <div className="inline-block px-6 py-3 bg-gold-500 text-dark-primary rounded-full text-sm font-bold mb-6 shadow-lg">
               Client Reviews
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-text-primary">What Our Clients Say</h2>
-            <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-text-primary">What Our Clients Say</h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary max-w-2xl sm:max-w-3xl mx-auto px-2">
               Don't just take our word for it. Here's what our satisfied clients have to say about their experience
               working with RJ INTERIORS & CONSTRUCTIONS.
             </p>

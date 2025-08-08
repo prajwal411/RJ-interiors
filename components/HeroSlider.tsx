@@ -1,3 +1,4 @@
+
 "use client"
 import { useState, useEffect } from "react"
 import Image from "next/image"
@@ -166,17 +167,18 @@ export default function HeroSlider() {
           </button>
 
           {/* Slide Indicators */}
-          <div className="flex space-x-2">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? "bg-gold-500 w-8" : "bg-text-muted"
-                }`}
-              />
-            ))}
-          </div>
+<div className="flex space-x-2">
+{slides.map((_, index) => (
+  <button
+    key={index}
+    onClick={() => setCurrentSlide(index)}
+    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+      index === currentSlide ? "bg-gold-500 w-2" : "bg-text-muted"
+    }`}
+    style={{ minWidth: '2px', minHeight: '2px' }}
+  />
+))}
+</div>
 
           {/* Progress Bar */}
           <div className="w-20 h-1 bg-dark-accent rounded-full overflow-hidden">

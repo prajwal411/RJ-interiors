@@ -82,15 +82,15 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "TDP MLA Office",
-    category: "Government & Institutional",
+    title: "Brindavanam-Ananthpur MLA House.",
+    category: "Residential & Mixed-Use",
     location: "Andhra Pradesh",
     year: "2023",
-    client: "Telugu Desam Party MLA",
+    client: "Brindavanam-Ananthpur MLA",
     projectType: "Legislative Office",
     description:
       "MLA office complex featuring elegant GRC elements, professional architecture, and public-friendly design. The project serves as a constituency office with emphasis on accessibility and professional representation.",
-    images: ["/images/project-4.png", "/images/project-2.png", "/images/commercial-2.png"],
+    images: ["/images/MLAhouse2.jpg", "/images/MLAhouse3.jpg", "/images/MLAhouse4.jpg","/images/MLAhouse1.jpg", "/images/MLAhouse5.jpg", "/images/MLAhouse6.jpg"],
     features: [
       "Legislative Architecture",
       "Professional Design",
@@ -147,7 +147,7 @@ const projects: Project[] = [
     projectType: "Public Market Infrastructure",
     description:
       "Community market complex featuring durable GRC elements, functional design, and public-friendly architecture. The project serves as a local commercial hub with emphasis on community needs and sustainable construction.",
-    images: ["/images/project-1.png", "/images/project-5.png", "/images/commercial-1.png"],
+    images: ["/images/JanathaB1.jpg", "/images/Janatha2.jpg"],
     features: [
       "Community Market Design",
       "Functional GRC Elements",
@@ -160,6 +160,25 @@ const projects: Project[] = [
   // Healthcare Projects
   {
     id: 8,
+    title: "KBN Hospital Kalburgi",
+    category: "Healthcare",
+    location: "Kalburgi, Karnataka",
+    year: "2023",
+    client: "KBN Hospital Trust",
+    projectType: "Multi-specialty Hospital",
+    description:
+      "Modern multi-specialty hospital featuring advanced medical infrastructure with hygienic GRC elements, specialized healthcare design, and patient-centric architecture. The project creates a comprehensive healthcare facility with emphasis on medical excellence, patient comfort, and modern healthcare standards.",
+    images: ["/images/kbn2.jpg", "/images/kbn1.jpg", "/images/kbn3.jpg"],
+    features: [
+      "Multi-specialty Healthcare Design",
+      "Hygienic GRC Elements",
+      "Patient-centric Architecture",
+      "Medical Excellence Standards",
+      "Modern Healthcare Infrastructure",
+    ],
+  },
+  {
+    id: 9,
     title: "MVJ Medical College & Hospital",
     category: "Healthcare",
     location: "Bangalore, Karnataka",
@@ -178,7 +197,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "CMH Hospital Complex",
     category: "Healthcare",
     location: "Kolar, Karnataka",
@@ -187,7 +206,7 @@ const projects: Project[] = [
     projectType: "Military Medical Infrastructure",
     description:
       "Military hospital facility featuring specialized GRC and FRP elements designed for medical applications. The project includes antimicrobial surfaces, chemical-resistant materials, and architectural elements that support the unique requirements of military medical facilities.",
-    images: ["/images/project-3.png", "/images/project-4.png", "/images/commercial-1.png"],
+    images: ["/images/CMH Hospital .jpg"],
     features: [
       "Antimicrobial Surfaces",
       "Chemical Resistant",
@@ -197,7 +216,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "Victoria Hospital Renovation",
     category: "Healthcare",
     location: "Bangalore, Karnataka",
@@ -206,7 +225,7 @@ const projects: Project[] = [
     projectType: "Heritage Hospital Renovation",
     description:
       "Historic hospital renovation featuring heritage-compatible GRC elements that blend seamlessly with existing architecture. The project required careful restoration techniques, color matching, and specialized finishes to preserve the hospital's historical character while upgrading functionality.",
-    images: ["/images/project-4.png", "/images/project-5.png", "/images/project-2.png"],
+    images: ["/images/victoriahospital.jpg"],
     features: [
       "Heritage Restoration",
       "Color Matching",
@@ -218,7 +237,26 @@ const projects: Project[] = [
 
   // Education & Research Projects
   {
-    id: 11,
+    id: 12,
+    title: "Harrow International School Devanahalli",
+    category: "Education & Research",
+    location: "Devanahalli, Bangalore",
+    year: "2023",
+    client: "Harrow International School",
+    projectType: "International School",
+    description:
+      "Prestigious international school featuring world-class educational infrastructure with sophisticated GRC elements, modern learning spaces, and international education standards. The project creates an exceptional learning environment with emphasis on academic excellence, cultural diversity, and state-of-the-art facilities for international students.",
+    images: ["/images/harrow1.jpg", "/images/harrow2.jpg"],
+    features: [
+      "International Education Standards",
+      "Sophisticated GRC Elements",
+      "Modern Learning Spaces",
+      "Academic Excellence Focus",
+      "Cultural Diversity Design",
+    ],
+  },
+  {
+    id: 13,
     title: "Shilpa Jain Heritage School",
     category: "Education & Research",
     location: "Hoskote, Bangalore",
@@ -237,7 +275,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 12,
+    id: 14,
     title: "Veterinary College Complex",
     category: "Education & Research",
     location: "Athani, Karnataka",
@@ -246,7 +284,7 @@ const projects: Project[] = [
     projectType: "Veterinary Education",
     description:
       "Specialized veterinary education facility featuring laboratory-grade GRC elements, research-focused architecture, and animal-friendly design. The project includes specialized surfaces for veterinary applications and research facilities.",
-    images: ["/images/project-6.png", "/images/project-2.png", "/images/project-4.png"],
+    images: ["/images/veterinarycollage.jpg","/images/vc2.png","/images/vc3.png"],
     features: [
       "Laboratory-grade Materials",
       "Research-focused Design",
@@ -258,7 +296,7 @@ const projects: Project[] = [
 
   // Religious & Community Projects
   {
-    id: 13,
+    id: 15,
     title: "Bismilla Green Masjid",
     category: "Religious & Community",
     location: "Bangalore, Karnataka",
@@ -267,7 +305,7 @@ const projects: Project[] = [
     projectType: "Religious Architecture",
     description:
       "Beautiful mosque featuring traditional Islamic GRC architectural elements including ornate arches, decorative panels, and intricate geometric patterns. The project combines religious architectural traditions with modern construction techniques to create a spiritually inspiring space.",
-    images: ["/images/project-1.png", "/images/project-3.png", "/images/project-6.png"],
+    images: ["/images/bgm1.jpg", "/images/bgm2.jpg", "/images/bgm3.jpg"],
     features: [
       "Islamic Architecture",
       "Ornate GRC Arches",
@@ -277,7 +315,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 14,
+    id: 16,
     title: "Gokul Foundation Complex",
     category: "Religious & Community",
     location: "Bangalore, Karnataka",
@@ -296,7 +334,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 15,
+    id: 17,
     title: "Infant Jesus Church",
     category: "Religious & Community",
     location: "Bangalore, Karnataka",
@@ -315,7 +353,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 16,
+    id: 18,
     title: "ISKCON Temple Complex",
     category: "Religious & Community",
     location: "Coimbatore, Tamil Nadu",
@@ -324,7 +362,7 @@ const projects: Project[] = [
     projectType: "Temple Architecture",
     description:
       "Magnificent temple complex featuring traditional Vedic architecture with modern GRC construction. The project includes intricate carved elements, decorative columns, and architectural details that reflect the spiritual and cultural significance of the ISKCON tradition.",
-    images: ["/images/project-4.png", "/images/project-6.png", "/images/project-3.png"],
+    images: ["/images/ISKCON Temple.jpg"],
     features: [
       "Vedic Architecture",
       "Intricate GRC Carvings",
@@ -334,7 +372,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 17,
+    id: 19,
     title: "Basil Wood International ISKCON",
     category: "Religious & Community",
     location: "Gumjur, Bangalore",
@@ -355,7 +393,7 @@ const projects: Project[] = [
 
   // Residential & Mixed-Use Projects
   {
-    id: 18,
+    id: 20,
     title: "Brigade Eldorado",
     category: "Residential & Mixed-Use",
     location: "Bagalur, Bangalore",
@@ -374,7 +412,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 19,
+    id: 21,
     title: "Brigade Komarla Heights",
     category: "Residential & Mixed-Use",
     location: "Bangalore, Karnataka",
@@ -393,7 +431,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 20,
+    id: 22,
     title: "Zonasha Estates",
     category: "Residential & Mixed-Use",
     location: "Bangalore, Karnataka",
@@ -412,7 +450,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 21,
+    id: 23,
     title: "SB Urbanscapes",
     category: "Residential & Mixed-Use",
     location: "Bommanahalli, Bangalore",
@@ -431,7 +469,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 22,
+    id: 24,
     title: "Aashraya Projects",
     category: "Residential & Mixed-Use",
     location: "Hosakote, Bangalore",
@@ -450,7 +488,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 23,
+    id: 25,
     title: "Gopalan Florenza",
     category: "Residential & Mixed-Use",
     location: "Bangalore, Karnataka",
@@ -469,7 +507,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 24,
+    id: 26,
     title: "Gopalan Olympia",
     category: "Residential & Mixed-Use",
     location: "Bangalore, Karnataka",
@@ -488,7 +526,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 25,
+    id: 27,
     title: "4 Square Realty",
     category: "Residential & Mixed-Use",
     location: "Rajarajeshwarinagar, Bangalore",
@@ -507,7 +545,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 26,
+    id: 28,
     title: "Shriram Greenfield",
     category: "Residential & Mixed-Use",
     location: "Bidarahalli, Bangalore",
@@ -526,7 +564,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 27,
+    id: 29,
     title: "Jay House",
     category: "Residential & Mixed-Use",
     location: "Coimbatore, Tamil Nadu",
@@ -545,7 +583,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 28,
+    id: 30,
     title: "MP Raghavendra House",
     category: "Residential & Mixed-Use",
     location: "Bangalore, Karnataka",
@@ -564,7 +602,26 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 29,
+    id: 31,
+    title: "Aero One Devanahalli",
+    category: "Residential & Mixed-Use",
+    location: "Devanahalli, Bangalore",
+    year: "2023",
+    client: "Aero One Developers",
+    projectType: "Airport City Residential",
+    description:
+      "Premium residential development near Bangalore International Airport featuring aviation-themed GRC elements, modern architecture, and airport city living amenities. The project creates a unique living experience with emphasis on connectivity, luxury amenities, and contemporary design for airport professionals and travelers.",
+    images: ["/images/aero1.jpg", "/images/aero2.jpg", "/images/aero3.jpg", "/images/aero4.jpg"],
+    features: [
+      "Airport City Living",
+      "Aviation-themed GRC Elements",
+      "Modern Residential Architecture",
+      "Premium Amenities",
+      "Airport Connectivity Focus",
+    ],
+  },
+  {
+    id: 32,
     title: "Urban Field Realty",
     category: "Residential & Mixed-Use",
     location: "Whitefield, Bangalore",
@@ -585,7 +642,26 @@ const projects: Project[] = [
 
   // Commercial & Office Spaces
   {
-    id: 30,
+    id: 33,
+    title: "Court Yard Marriott Bengaluru",
+    category: "Commercial & Office Spaces",
+    location: "Bengaluru, Karnataka",
+    year: "2023",
+    client: "Marriott International",
+    projectType: "Hotel & Hospitality",
+    description:
+      "Premium hotel project featuring elegant GRC architectural elements, luxury hospitality design, and international hotel standards. The project creates a sophisticated accommodation experience with emphasis on modern amenities, professional service, and contemporary architectural excellence.",
+    images: ["/images/cym.jpg", "/images/cym2.jpg", "/images/cmy3.jpg"],
+    features: [
+      "Luxury Hotel Architecture",
+      "Professional GRC Facades",
+      "International Standards",
+      "Hospitality Excellence",
+      "Contemporary Design Elements",
+    ],
+  },
+  {
+    id: 34,
     title: "RBR Corporate Office",
     category: "Commercial & Office Spaces",
     location: "Koramangala, Bangalore",
@@ -604,7 +680,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 31,
+    id: 35,
     title: "Aiykar Bhavan",
     category: "Commercial & Office Spaces",
     location: "Kochi, Kerala",
@@ -623,7 +699,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 32,
+    id: 36,
     title: "Green Finch Properties",
     category: "Commercial & Office Spaces",
     location: "Bangalore, Karnataka",
@@ -642,7 +718,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 33,
+    id: 37,
     title: "Capstone Office Complex",
     category: "Commercial & Office Spaces",
     location: "Bommasandra, Bangalore",
@@ -661,7 +737,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 34,
+    id: 38,
     title: "Pavanputra Convention Hall",
     category: "Commercial & Office Spaces",
     location: "Bangalore, Karnataka",
@@ -682,7 +758,7 @@ const projects: Project[] = [
 
   // Hospitality & Leisure Projects
   {
-    id: 35,
+    id: 39,
     title: "Lamarvella Hotel",
     category: "Hospitality & Leisure",
     location: "Bangalore, Karnataka",
@@ -701,7 +777,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 36,
+    id: 40,
     title: "Renaissance Hotel",
     category: "Hospitality & Leisure",
     location: "Race Course Road, Bangalore",
@@ -720,7 +796,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 37,
+    id: 41,
     title: "Chennai Le-Classic Hotel",
     category: "Hospitality & Leisure",
     location: "Porur, Chennai",
@@ -739,7 +815,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 38,
+    id: 42,
     title: "Marriott Courtyard",
     category: "Hospitality & Leisure",
     location: "Bangalore, Karnataka",
@@ -758,7 +834,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 39,
+    id: 43,
     title: "Hilton Hotel",
     category: "Hospitality & Leisure",
     location: "Goa",
@@ -777,7 +853,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 40,
+    id: 44,
     title: "Tamara Resort",
     category: "Hospitality & Leisure",
     location: "Coorg, Karnataka",
@@ -796,7 +872,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 41,
+    id: 45,
     title: "Taj West End",
     category: "Hospitality & Leisure",
     location: "Race Course Road, Bangalore",
@@ -815,7 +891,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 42,
+    id: 46,
     title: "Leroma Hotel",
     category: "Hospitality & Leisure",
     location: "Bangalore, Karnataka",
@@ -834,7 +910,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 43,
+    id: 47,
     title: "Hotel Empire",
     category: "Hospitality & Leisure",
     location: "South End Circle, Bangalore",
@@ -853,7 +929,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 44,
+    id: 48,
     title: "Soho and Sky",
     category: "Hospitality & Leisure",
     location: "Jakkur, Bangalore",
@@ -872,7 +948,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 45,
+    id: 49,
     title: "Manyavar Showroom",
     category: "Hospitality & Leisure",
     location: "Jayanagar 4th Block, Bangalore",
@@ -891,7 +967,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 46,
+    id: 50,
     title: "Indian Tiffin Club",
     category: "Hospitality & Leisure",
     location: "Bangalore, Karnataka",
@@ -912,7 +988,7 @@ const projects: Project[] = [
 
   // Retail, Events & Conventions
   {
-    id: 47,
+    id: 51,
     title: "Nesto Hypermarket",
     category: "Retail, Events & Conventions",
     location: "Kottekal, Kerala",
@@ -931,7 +1007,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 48,
+    id: 52,
     title: "Royal Convention Hall",
     category: "Retail, Events & Conventions",
     location: "Mysore, Karnataka",
@@ -950,7 +1026,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 49,
+    id: 53,
     title: "Regal Jewellers Showroom",
     category: "Retail, Events & Conventions",
     location: "Bangalore, Karnataka",
@@ -969,7 +1045,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 50,
+    id: 54,
     title: "Arabian Gold and Diamond",
     category: "Retail, Events & Conventions",
     location: "Kochi, Kerala",
@@ -988,7 +1064,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 51,
+    id: 55,
     title: "Sri Muthalli Party Hall",
     category: "Retail, Events & Conventions",
     location: "Bangalore, Karnataka",
@@ -1007,7 +1083,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 52,
+    id: 56,
     title: "Tarangini Complex",
     category: "Retail, Events & Conventions",
     location: "Jayanagar, Bangalore",
@@ -1026,7 +1102,26 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 53,
+    id: 57,
+    title: "Venkatamma Ramaiah Kalyana Soudha",
+    category: "Retail, Events & Conventions",
+    location: "Bangalore, Karnataka",
+    year: "2023",
+    client: "Venkatamma Ramaiah Trust",
+    projectType: "Wedding Hall & Event Center",
+    description:
+      "Traditional wedding hall and event center featuring cultural GRC elements, celebration-focused architecture, and versatile event spaces. The project creates a perfect venue for weddings, cultural events, and social gatherings with emphasis on traditional Indian architectural aesthetics and modern functionality.",
+    images: ["/images/vrks1.jpg", "/images/vrks2.jpg", "/images/vrks3.jpg"],
+    features: [
+      "Traditional Wedding Hall Design",
+      "Cultural GRC Elements",
+      "Celebration-focused Architecture",
+      "Versatile Event Spaces",
+      "Traditional Indian Aesthetics",
+    ],
+  },
+  {
+    id: 58,
     title: "B-More Shopping Complex",
     category: "Retail, Events & Conventions",
     location: "Bangalore, Karnataka",
@@ -1047,7 +1142,7 @@ const projects: Project[] = [
 
   // Infrastructure & Public Works
   {
-    id: 54,
+    id: 60,
     title: "KBN Infrastructure",
     category: "Infrastructure & Public Works",
     location: "Kalburgi, Karnataka",
@@ -1066,7 +1161,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 55,
+    id: 61,
     title: "Tuticorin Airport Works",
     category: "Infrastructure & Public Works",
     location: "Tuticorin, Tamil Nadu",
@@ -1085,7 +1180,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 56,
+    id: 62,
     title: "Sandur Manganese Iron Ores",
     category: "Infrastructure & Public Works",
     location: "Sandur, Karnataka",
@@ -1104,7 +1199,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 57,
+    id: 63,
     title: "BEL Infrastructure",
     category: "Infrastructure & Public Works",
     location: "Kadubeesenahalli, Bangalore",
@@ -1185,7 +1280,7 @@ export default function Gallery() {
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-text-primary">Project Gallery</h2>
             <p className="text-lg md:text-xl text-text-secondary max-w-4xl mx-auto">
-              Explore our extensive portfolio of 57+ completed GRC & FRP projects across India, spanning government
+              Explore our extensive portfolio of 62+ completed GRC & FRP projects across India, spanning government
               institutions, healthcare facilities, religious complexes, luxury hotels, residential developments, and
               major infrastructure projects including prestigious clients like Brigade Group, Taj Hotels, Marriott,
               Hilton, DRDO, and many more.
@@ -1195,12 +1290,12 @@ export default function Gallery() {
 
         {/* Category Filter */}
         <FadeIn delay={0.2}>
-          <div className="flex flex-wrap justify-center gap-2 mb-12 max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-8 sm:mb-12 max-w-6xl mx-auto px-2">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-3 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 ${
+                className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-full text-xs font-medium transition-all duration-300 ${
                   selectedCategory === category
                     ? "bg-gold-500 text-dark-primary shadow-lg"
                     : "bg-dark-primary text-text-secondary hover:bg-dark-accent border border-dark-accent"
@@ -1214,7 +1309,7 @@ export default function Gallery() {
 
         {/* Projects Grid */}
         <StaggerIn direction="up" staggerDelay={0.1}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
@@ -1223,7 +1318,7 @@ export default function Gallery() {
                 onClick={() => openModal(project)}
               >
                 <div className="bg-dark-primary border border-dark-accent rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                     <Image
                       src={project.images[0] || "/placeholder.svg"}
                       alt={project.title}

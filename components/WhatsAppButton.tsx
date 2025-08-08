@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
           initial={{ opacity: 0, scale: 0.8, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 20 }}
-          className="fixed bottom-6 md:bottom-24 right-6 z-50"
+          className="fixed bottom-4 sm:bottom-6 md:bottom-24 right-4 sm:right-6 z-50"
         >
           <div className="relative">
             {/* Tooltip */}
@@ -43,7 +43,7 @@ export default function WhatsAppButton() {
                   initial={{ opacity: 0, x: 10 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 10 }}
-                  className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap shadow-lg"
+                  className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm whitespace-nowrap shadow-lg hidden sm:block"
                 >
                   Chat with us on WhatsApp
                   <div className="absolute right-0 top-1/2 transform translate-x-1 -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-900 border-t-4 border-t-transparent border-b-4 border-b-transparent"></div>
