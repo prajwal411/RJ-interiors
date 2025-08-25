@@ -46,11 +46,13 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-dark-primary/95 backdrop-blur-md shadow-xl border-b border-dark-accent" : "bg-transparent"
       }`}
+      role="navigation"
+      aria-label="Primary"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <button onClick={() => handleNavClick("#top")} className="flex items-center space-x-3 cursor-pointer">
+          <button onClick={() => handleNavClick("#top")} className="flex items-center space-x-3 cursor-pointer" aria-label="Go to top of page">
             <Image
               src="/logo.png"
               alt="RJ INTERIORS & CONSTRUCTIONS"
@@ -59,8 +61,8 @@ export default function Navbar() {
               className="w-10 h-10 md:w-12 md:h-12"
             />
             <div className="hidden sm:block">
-              <h1 className="text-lg md:text-xl font-bold text-gold-500">RJ INTERIORS</h1>
-              <p className="text-xs text-text-muted">& CONSTRUCTIONS</p>
+              <span className="text-lg md:text-xl font-bold text-gold-500">RJ INTERIORS</span>
+              <span className="text-xs text-gold-500"></span>
             </div>
           </button>
 
@@ -93,6 +95,9 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 rounded-md text-text-secondary hover:text-gold-500"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -106,6 +111,9 @@ export default function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden bg-dark-secondary border-t border-dark-accent"
+              id="mobile-menu"
+              role="region"
+              aria-label="Mobile navigation"
             >
               <div className="py-4 space-y-2">
                 {navItems.map((item) => (

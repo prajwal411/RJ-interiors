@@ -1,0 +1,13 @@
+{
+  "name": "RJ Interiors & Constructions",
+  "short_name": "RJ Interiors",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    { "src": "/logo.png", "sizes": "192x192", "type": "image/png" }
+  ]
+}
+
+

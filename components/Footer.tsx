@@ -20,6 +20,10 @@ const quickLinks = [
   { name: "Products", href: "#products" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact", href: "#contact" },
+  // City pages for internal linking
+  { name: "Bangalore FRP & GRC", href: "/locations/bangalore" },
+  { name: "Delhi FRP & GRC", href: "/locations/delhi" },
+  { name: "Mumbai FRP & GRC", href: "/locations/mumbai" },
 ]
 
 const socialLinks = [

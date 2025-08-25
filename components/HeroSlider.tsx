@@ -73,7 +73,12 @@ export default function HeroSlider() {
   }
 
   return (
-    <section className="relative h-screen overflow-hidden bg-dark-deep">
+    <section
+      className="relative h-screen overflow-hidden bg-dark-deep"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Hero promotions"
+    >
       {/* Background Images */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -86,7 +91,7 @@ export default function HeroSlider() {
         >
           <Image
             src={slides[currentSlide].image || "/placeholder.svg"}
-            alt={slides[currentSlide].title}
+            alt={`${slides[currentSlide].title} — ${slides[currentSlide].subtitle}`}
             fill
             priority
             className="object-cover"
@@ -140,7 +145,7 @@ export default function HeroSlider() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                <Link href={slides[currentSlide].link}>
+                <Link href={slides[currentSlide].link} aria-label={slides[currentSlide].cta}>
                   <AnimatedButton
                     size="lg"
                     className="bg-gold-500 hover:bg-gold-600 text-dark-primary font-bold px-8 py-4 text-lg shadow-xl"
@@ -162,6 +167,7 @@ export default function HeroSlider() {
           <button
             onClick={() => setIsPlaying(!isPlaying)}
             className="p-2 bg-dark-secondary/80 backdrop-blur-sm rounded-full text-text-primary hover:bg-dark-accent/80 transition-colors"
+            aria-label={isPlaying ? "Pause carousel" : "Play carousel"}
           >
             {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
           </button>
@@ -175,6 +181,8 @@ export default function HeroSlider() {
                 className={`transition-all duration-300 ${
                   index === currentSlide ? "bg-gold-500" : "bg-text-muted"
                 }`}
+                aria-label={`Go to slide ${index + 1}`}
+                aria-current={index === currentSlide}
                 style={{
                   width: index === currentSlide ? '16px' : '8px',
                   height: '8px',
@@ -203,12 +211,14 @@ export default function HeroSlider() {
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 p-3 bg-dark-secondary/80 backdrop-blur-sm rounded-full text-text-primary hover:bg-dark-accent/80 transition-colors"
+        aria-label="Previous slide"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 p-3 bg-dark-secondary/80 backdrop-blur-sm rounded-full text-text-primary hover:bg-dark-accent/80 transition-colors"
+        aria-label="Next slide"
       >
         <ChevronRight className="h-6 w-6" />
       </button>
