@@ -180,15 +180,15 @@ export default function Partners() {
                 <div className="text-sm opacity-90">Trusted Partners</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">500+</div>
+                <div className="text-3xl md:text-4xl font-bold mb-2">200+</div>
                 <div className="text-sm opacity-90">Projects Delivered</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">15+</div>
+                <div className="text-3xl md:text-4xl font-bold mb-2">70+</div>
                 <div className="text-sm opacity-90">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">98%</div>
+                <div className="text-3xl md:text-4xl font-bold mb-2">99.9%</div>
                 <div className="text-sm opacity-90">Client Satisfaction</div>
               </div>
             </div>

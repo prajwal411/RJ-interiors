@@ -51,19 +51,19 @@ const achievements = [
     description: "Established in 2008, we've been serving clients with dedication",
   },
   {
-    number: 500,
+    number: 200,
     suffix: "+",
     label: "Projects Completed",
     description: "Successfully delivered projects across residential, commercial & industrial sectors",
   },
   {
-    number: 50,
+    number: 70,
     suffix: "+",
     label: "Happy Clients",
     description: "Building lasting relationships with satisfied customers",
   },
   {
-    number: 98,
+    number: 99.5,
     suffix: "%",
     label: "Client Satisfaction",
     description: "Consistently exceeding expectations with quality service",

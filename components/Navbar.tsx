@@ -62,7 +62,6 @@ export default function Navbar() {
             />
             <div className="hidden sm:block">
               <span className="text-lg md:text-xl font-bold text-gold-500">RJ INTERIORS</span>
-              <span className="text-xs text-gold-500"></span>
             </div>
           </button>
 
@@ -128,7 +127,7 @@ export default function Navbar() {
                 <div className="px-4 py-2 border-t border-dark-accent">
                   <div className="flex items-center space-x-2 text-sm mb-2">
                     <Phone className="h-4 w-4 text-gold-500" />
-                    <span className="text-text-secondary">+91 7892142197</span>
+                    <span className="text-text-secondary">+91 9900579417</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Mail className="h-4 w-4 text-gold-500" />

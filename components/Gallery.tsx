@@ -34,7 +34,7 @@ const projects: Project[] = [
     projectType: "Political Office",
     description:
       "Political party office featuring modern GRC architectural elements, professional facades, and durable construction. The project creates an impressive political headquarters with emphasis on public accessibility and professional appearance.",
-    images: ["/images/tdpoffice1.jpg", "/images/tdpoffice2.jpg", "/images/tdpoffice3.jpg", "/images/tdpoffice4.jpg"],
+    images: ["/images/project-3.png", "/images/project-1.png", "/images/commercial-1.png"],
     features: [
       "Modern Political Architecture",
       "Professional GRC Facades",
@@ -53,7 +53,7 @@ const projects: Project[] = [
     projectType: "Public Market Infrastructure",
     description:
       "Community market complex featuring durable GRC elements, functional design, and public-friendly architecture. The project serves as a local commercial hub with emphasis on community needs and sustainable construction.",
-    images: ["/images/janathab1.jpg", "/images/janatha2.jpg"],
+    images: ["/images/JanathaB1.jpg", "/images/Janatha2.jpg"],
     features: [
       "Community Market Design",
       "Functional GRC Elements",
@@ -72,7 +72,7 @@ const projects: Project[] = [
     projectType: "Government Office",
     description:
       "Government office complex featuring institutional-grade GRC elements, durable finishes, and professional architecture. The project meets government construction standards while creating an efficient workspace environment for public service delivery.",
-    images: ["/images/frp-tanks-delhi.jpg", "/images/income1.jpg", "/images/income2.jpg", "/images/income3.jpg", "/images/income4.jpg"],
+    images: ["/images/commercial-2.png", "/images/project-5.png", "/images/project-1.png"],
     features: [
       "Government Standards",
       "Institutional Architecture",
@@ -93,7 +93,7 @@ const projects: Project[] = [
     projectType: "Military Medical Infrastructure",
     description:
       "Military hospital facility featuring specialized GRC and FRP elements designed for medical applications. The project includes antimicrobial surfaces, chemical-resistant materials, and architectural elements that support the unique requirements of military medical facilities.",
-    images: ["/images/cmh-hospital.jpg"],
+    images: ["/images/CMH Hospital .jpg"],
     features: [
       "Antimicrobial Surfaces",
       "Chemical Resistant",
@@ -190,7 +190,7 @@ const projects: Project[] = [
     projectType: "Green Residential",
     description:
       "Eco-friendly residential development featuring sustainable GRC elements, green architecture, and environmentally conscious design. The project emphasizes sustainability and environmental responsibility in residential construction.",
-    images: ["/images/sriram1.jpg", "/images/sriram2.jpg", "/images/sriram3.jpg"],
+    images: ["/images/project-1.png", "/images/residential-1.png", "/images/project-5.png"],
     features: [
       "Sustainable GRC Elements",
       "Green Architecture",
@@ -251,7 +251,7 @@ const projects: Project[] = [
     projectType: "International Hotel Chain",
     description:
       "International standard hotel featuring world-class GRC architectural elements, luxury finishes, and hospitality design excellence. The project meets global hospitality standards while incorporating local architectural influences and climate-appropriate materials.",
-    images: ["/images/racecourse1.jpg", "/images/racecourse2.jpg", "/images/racecourse3.jpg"],
+    images: ["/images/project-4.png", "/images/commercial-2.png", "/images/project-2.png"],
     features: [
       "International Standards",
       "World-class Architecture",
@@ -289,7 +289,7 @@ const projects: Project[] = [
     projectType: "Retail Showroom",
     description:
       "Fashion retail showroom featuring elegant GRC elements, luxury retail design, and premium shopping experience. The project creates an upscale shopping environment for traditional Indian fashion.",
-    images: ["/images/manyavar.jpg"],
+    images: ["/images/project-2.png", "/images/project-6.png", "/images/project-3.png"],
     features: [
       "Elegant GRC Elements",
       "Luxury Retail Design",
@@ -308,7 +308,7 @@ const projects: Project[] = [
     projectType: "Restaurant",
     description:
       "Traditional restaurant featuring cultural GRC elements, Indian architectural design, and authentic dining atmosphere. The project creates an authentic Indian dining experience with emphasis on cultural architecture.",
-    images: ["/images/indian1.jpg", "/images/indian2.jpg", "/images/indian3.jpg"],
+    images: ["/images/project-3.png", "/images/project-1.png", "/images/project-4.png"],
     features: [
       "Cultural GRC Elements",
       "Indian Architectural Design",
@@ -329,7 +329,7 @@ const projects: Project[] = [
     projectType: "Convention Center",
     description:
       "Grand convention center featuring impressive GRC architectural elements, large-span structures, and event-focused design. The project creates a versatile venue suitable for conferences, weddings, and cultural events with emphasis on acoustic performance and visual appeal.",
-    images: ["/images/royal1.jpg", "/images/royal2.jpg"],
+    images: ["/images/project-5.png", "/images/project-6.png", "/images/project-1.png"],
     features: [
       "Convention Architecture",
       "Large-span Structures",
@@ -348,7 +348,7 @@ const projects: Project[] = [
     projectType: "Luxury Retail",
     description:
       "Luxury jewelry showroom featuring premium GRC elements, sophisticated display architecture, and high-end retail design. The project creates an exclusive shopping environment that reflects the prestige of fine jewelry while ensuring security and customer comfort.",
-    images: ["/images/regal1.jpg", "/images/regal2.jpg"],
+    images: ["/images/project-6.png", "/images/project-3.png", "/images/commercial-2.png"],
     features: [
       "Luxury Retail Design",
       "Premium GRC Elements",
@@ -367,7 +367,7 @@ const projects: Project[] = [
     projectType: "Jewelry Showroom",
     description:
       "Luxury jewelry showroom featuring Arabian-inspired GRC elements, traditional Middle Eastern architecture, and premium retail design. The project combines cultural architectural elements with modern retail functionality.",
-    images: ["/images/agd.jpg"],
+    images: ["/images/project-1.png", "/images/project-4.png", "/images/project-2.png"],
     features: [
       "Arabian-inspired GRC Elements",
       "Traditional Middle Eastern Architecture",
@@ -386,7 +386,7 @@ const projects: Project[] = [
     projectType: "Golf Club & Recreation",
     description:
       "Premium golf club facility featuring elegant GRC architectural elements, sports-focused design, and luxury recreational amenities. The project creates an exclusive sports environment with emphasis on premium facilities and architectural excellence.",
-    images: ["/images/princess2.jpg","/images/princess3.jpg", "/images/princess4.jpg","/images/princess5.jpg", "/images/princess6.jpg"],
+    images: ["/images/project-5.png", "/images/project-2.png", "/images/project-6.png"],
     features: [
       "Golf Club Architecture",
       "Sports-focused Design",
@@ -502,7 +502,7 @@ const projects: Project[] = [
     projectType: "Temple Infrastructure",
     description:
       "Magnificent temple complex featuring traditional Vedic architecture with modern GRC construction. The project includes intricate carved elements, decorative columns, and architectural details that reflect the spiritual and cultural significance of the ISKCON tradition.",
-    images: ["/images/iskcon-temple.jpg"],
+    images: ["/images/ISKCON Temple.jpg"],
     features: [
       "Vedic Architecture",
       "Intricate GRC Carvings",
@@ -626,13 +626,8 @@ export default function Gallery() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [activeTab, setActiveTab] = useState<"images" | "videos">("images")
 
-  // Hide specific projects from the gallery without mutating the source data
-  const visibleProjects = projects.filter((project) => project.title !== "Marriott Courtyard")
-
   const filteredProjects =
-    selectedCategory === "All"
-      ? visibleProjects
-      : visibleProjects.filter((project) => project.category === selectedCategory)
+    selectedCategory === "All" ? projects : projects.filter((project) => project.category === selectedCategory)
 
   const openModal = (project: Project) => {
     setSelectedProject(project)
@@ -660,7 +655,7 @@ export default function Gallery() {
 
   const handleContactRedirect = () => {
     closeModal()
-    router.push("/#contact")
+    router.push("/contact")
   }
 
   return (
@@ -798,7 +793,7 @@ export default function Gallery() {
             {/* Project Count Display */}
             <div className="text-center mt-12">
               <p className="text-text-secondary">
-                Showing <span className="text-gold-500 font-semibold">{filteredProjects.length}</span> of {visibleProjects.length} total projects
+                Showing <span className="text-gold-500 font-semibold">{filteredProjects.length}</span> of 30 total projects
                 {selectedCategory !== "All" && (
                   <span>
                     {" "}

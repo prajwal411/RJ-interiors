@@ -8,9 +8,9 @@ import { HoverCard } from "@/components/animations/hover-card"
 
 const stats = [
   { number: 15, suffix: "+", label: "Years Experience", icon: Clock },
-  { number: 500, suffix: "+", label: "Projects Completed", icon: Target },
-  { number: 50, suffix: "+", label: "Happy Clients", icon: Users },
-  { number: 98, suffix: "%", label: "Client Satisfaction", icon: Award },
+  { number: 200, suffix: "+", label: "Projects Completed", icon: Target },
+  { number: 70, suffix: "+", label: "Happy Clients", icon: Users },
+  { number: 99.5, suffix: "%", label: "Client Satisfaction", icon: Award },
 ]
 
 const achievements = [
