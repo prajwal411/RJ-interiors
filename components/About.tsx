@@ -17,7 +17,7 @@ const achievements = [
   {
     title: "In-House Manufacturing",
     description: "In-house manufacturing units in Bangalore equipped with latest technology",
-    image: "/images/about-team.png",
+    image: "/images/factory3.jpg",
   },
   {
     title: "Expert Team",
@@ -32,7 +32,7 @@ const achievements = [
   {
     title: "Custom Solutions",
     description: "Tailored designs and solutions for every unique project requirement",
-    image: "/images/process.png",
+    image: "/images/custam.png",
   },
 ]
 
@@ -105,7 +105,7 @@ export default function About() {
           <FadeIn direction="right">
             <div className="relative">
               <Image
-                src="/images/about-story.png"
+                src="/images/factory1.jpg"
                 alt="RJ INTERIORS Manufacturing Facility"
                 width={600}
                 height={500}

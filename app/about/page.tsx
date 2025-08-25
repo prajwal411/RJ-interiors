@@ -169,7 +169,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
-              <Image src="/images/about-story.png" alt="Company history" fill className="object-cover" />
+              <Image src="/images/about-story.jpg" alt="Company history" fill className="object-cover" />
             </div>
           </div>
         </div>

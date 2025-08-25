@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="hidden xl:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm">
               <Phone className="h-4 w-4 text-gold-500" />
-              <span className="text-text-secondary">+91 7892142197</span>
+              <span className="text-text-secondary">+91 9900579417</span>
             </div>
             <div className="flex items-center space-x-2 text-sm">
               <Mail className="h-4 w-4 text-gold-500" />

@@ -34,7 +34,7 @@ const projects: Project[] = [
     projectType: "Political Office",
     description:
       "Political party office featuring modern GRC architectural elements, professional facades, and durable construction. The project creates an impressive political headquarters with emphasis on public accessibility and professional appearance.",
-    images: ["/images/project-3.png", "/images/project-1.png", "/images/commercial-1.png"],
+    images: ["/images/tdpoffice1.jpg", "/images/tdpoffice2.jpg", "/images/tdpoffice3.jpg", "/images/tdpoffice4.jpg"],
     features: [
       "Modern Political Architecture",
       "Professional GRC Facades",
@@ -72,7 +72,7 @@ const projects: Project[] = [
     projectType: "Government Office",
     description:
       "Government office complex featuring institutional-grade GRC elements, durable finishes, and professional architecture. The project meets government construction standards while creating an efficient workspace environment for public service delivery.",
-    images: ["/images/commercial-2.png", "/images/project-5.png", "/images/project-1.png"],
+    images: ["/images/income1.jpg", "/images/income2.jpg", "/images/income3.jpg", "/images/income4.jpg"],
     features: [
       "Government Standards",
       "Institutional Architecture",
@@ -190,7 +190,7 @@ const projects: Project[] = [
     projectType: "Green Residential",
     description:
       "Eco-friendly residential development featuring sustainable GRC elements, green architecture, and environmentally conscious design. The project emphasizes sustainability and environmental responsibility in residential construction.",
-    images: ["/images/project-1.png", "/images/residential-1.png", "/images/project-5.png"],
+    images: ["/images/sriram1.jpg", "/images/sriram2.jpg", "/images/sriram3.jpg"],
     features: [
       "Sustainable GRC Elements",
       "Green Architecture",
@@ -251,7 +251,7 @@ const projects: Project[] = [
     projectType: "International Hotel Chain",
     description:
       "International standard hotel featuring world-class GRC architectural elements, luxury finishes, and hospitality design excellence. The project meets global hospitality standards while incorporating local architectural influences and climate-appropriate materials.",
-    images: ["/images/project-4.png", "/images/commercial-2.png", "/images/project-2.png"],
+    images: ["/images/racecourse3.jpg"],
     features: [
       "International Standards",
       "World-class Architecture",
@@ -260,25 +260,7 @@ const projects: Project[] = [
       "Climate-appropriate Materials",
     ],
   },
-  {
-    id: 13,
-    title: "Marriott Courtyard",
-    category: "Hospitality & Leisure",
-    location: "Bangalore, Karnataka",
-    year: "2022",
-    client: "Marriott International",
-    projectType: "Courtyard Hotel",
-    description:
-      "Courtyard hotel featuring contemporary GRC elements, modern hospitality design, and international hotel standards. The project provides comfortable accommodation with emphasis on modern amenities and guest satisfaction.",
-    images: ["/images/project-1.png", "/images/project-4.png", "/images/commercial-1.png"],
-    features: [
-      "Contemporary GRC Elements",
-      "Modern Hospitality Design",
-      "International Standards",
-      "Modern Amenities",
-      "Guest Satisfaction Focus",
-    ],
-  },
+
   {
     id: 14,
     title: "Manyavar – Jayanagar 4th Block",
@@ -289,7 +271,7 @@ const projects: Project[] = [
     projectType: "Retail Showroom",
     description:
       "Fashion retail showroom featuring elegant GRC elements, luxury retail design, and premium shopping experience. The project creates an upscale shopping environment for traditional Indian fashion.",
-    images: ["/images/project-2.png", "/images/project-6.png", "/images/project-3.png"],
+    images: ["/images/manyavar.jpg"],
     features: [
       "Elegant GRC Elements",
       "Luxury Retail Design",
@@ -308,7 +290,7 @@ const projects: Project[] = [
     projectType: "Restaurant",
     description:
       "Traditional restaurant featuring cultural GRC elements, Indian architectural design, and authentic dining atmosphere. The project creates an authentic Indian dining experience with emphasis on cultural architecture.",
-    images: ["/images/project-3.png", "/images/project-1.png", "/images/project-4.png"],
+    images: ["/images/indian1.jpg", "/images/indian2.jpg", "/images/indian3.jpg"],
     features: [
       "Cultural GRC Elements",
       "Indian Architectural Design",
@@ -329,7 +311,7 @@ const projects: Project[] = [
     projectType: "Convention Center",
     description:
       "Grand convention center featuring impressive GRC architectural elements, large-span structures, and event-focused design. The project creates a versatile venue suitable for conferences, weddings, and cultural events with emphasis on acoustic performance and visual appeal.",
-    images: ["/images/project-5.png", "/images/project-6.png", "/images/project-1.png"],
+    images: ["/images/royal1.jpg", "/images/royal2.jpg"],
     features: [
       "Convention Architecture",
       "Large-span Structures",
@@ -348,7 +330,7 @@ const projects: Project[] = [
     projectType: "Luxury Retail",
     description:
       "Luxury jewelry showroom featuring premium GRC elements, sophisticated display architecture, and high-end retail design. The project creates an exclusive shopping environment that reflects the prestige of fine jewelry while ensuring security and customer comfort.",
-    images: ["/images/project-6.png", "/images/project-3.png", "/images/commercial-2.png"],
+    images: ["/images/regal1.jpg", "/images/regal2.jpg"],
     features: [
       "Luxury Retail Design",
       "Premium GRC Elements",
@@ -367,7 +349,7 @@ const projects: Project[] = [
     projectType: "Jewelry Showroom",
     description:
       "Luxury jewelry showroom featuring Arabian-inspired GRC elements, traditional Middle Eastern architecture, and premium retail design. The project combines cultural architectural elements with modern retail functionality.",
-    images: ["/images/project-1.png", "/images/project-4.png", "/images/project-2.png"],
+    images: ["/images/agd.jpg"],
     features: [
       "Arabian-inspired GRC Elements",
       "Traditional Middle Eastern Architecture",
@@ -386,7 +368,7 @@ const projects: Project[] = [
     projectType: "Golf Club & Recreation",
     description:
       "Premium golf club facility featuring elegant GRC architectural elements, sports-focused design, and luxury recreational amenities. The project creates an exclusive sports environment with emphasis on premium facilities and architectural excellence.",
-    images: ["/images/project-5.png", "/images/project-2.png", "/images/project-6.png"],
+    images: ["/images/princess2.jpg", "/images/princess3.jpg", "/images/princess4.jpg", "/images/princess5.jpg", "/images/princess6.jpg" , "/images/princess7.jpg"],
     features: [
       "Golf Club Architecture",
       "Sports-focused Design",
@@ -426,7 +408,7 @@ const projects: Project[] = [
     projectType: "Industrial Infrastructure",
     description:
       "Industrial facility featuring heavy-duty GRC and FRP elements designed for mining industry applications. The project includes chemical-resistant surfaces, industrial-grade construction, and specialized architectural elements suitable for harsh industrial environments.",
-    images: ["/images/industrial-1.png", "/images/project-3.png", "/images/project-6.png"],
+    images: ["/images/sunder1.jpg", "/images/sunder2.jpg"],
     features: [
       "Industrial Grade Construction",
       "Chemical Resistant Materials",
@@ -435,25 +417,7 @@ const projects: Project[] = [
       "Harsh Environment Design",
     ],
   },
-  {
-    id: 22,
-    title: "TDP Office – Kaliyanadurga",
-    category: "Infrastructure & Public Works",
-    location: "Kaliyanadurga, Andhra Pradesh",
-    year: "2023",
-    client: "Telugu Desam Party",
-    projectType: "Political Office Infrastructure",
-    description:
-      "Political party office infrastructure featuring modern GRC architectural elements, professional facades, and durable construction. The project creates an impressive political headquarters with emphasis on public accessibility and professional appearance.",
-    images: ["/images/project-3.png", "/images/project-1.png", "/images/commercial-1.png"],
-    features: [
-      "Modern Political Architecture",
-      "Professional GRC Facades",
-      "Public Access Design",
-      "Durable Construction",
-      "Weather Resistant Elements",
-    ],
-  },
+
   {
     id: 23,
     title: "Bismilla Green Masjid",
@@ -483,7 +447,7 @@ const projects: Project[] = [
     projectType: "Church Infrastructure",
     description:
       "Sacred church facility featuring Gothic-inspired GRC elements, decorative facades, and architectural details that enhance the spiritual atmosphere. The project includes weather-resistant finishes and traditional church architectural elements adapted for local climate conditions.",
-    images: ["/images/project-3.png", "/images/project-5.png", "/images/project-2.png"],
+    images: ["/images/infant1.jpg", "/images/infant2.jpg", "/images/infant3.jpg"],
     features: [
       "Gothic-inspired Design",
       "Sacred Architecture",
@@ -521,7 +485,7 @@ const projects: Project[] = [
     projectType: "ISKCON Temple Complex",
     description:
       "International ISKCON temple complex featuring elaborate GRC architectural elements, traditional temple design, and modern construction techniques. The project combines spiritual architecture with contemporary building methods.",
-    images: ["/images/project-5.png", "/images/project-1.png", "/images/project-4.png"],
+    images: ["/images/basil.jpg"],
     features: [
       "International Temple Standards",
       "Elaborate GRC Elements",
@@ -559,7 +523,7 @@ const projects: Project[] = [
     projectType: "Shopping Mall Infrastructure",
     description:
       "Modern shopping mall featuring contemporary GRC elements, retail-focused architecture, and customer-centric design. The project creates an engaging shopping experience with emphasis on retail efficiency and customer comfort.",
-    images: ["/images/project-5.png", "/images/project-2.png", "/images/commercial-1.png"],
+    images: ["/images/mg1.jpg", "/images/mg2.jpg", "/images/mg3.jpg" , "/images/mg5.jpg", "/images/mg4.jpg"],
     features: [
       "Modern GRC Elements",
       "Retail-focused Architecture",
@@ -578,7 +542,7 @@ const projects: Project[] = [
     projectType: "Commercial Infrastructure",
     description:
       "Commercial complex featuring versatile GRC elements, multi-functional architecture, and commercial-residential integration. The project combines retail, office, and residential spaces in a unified architectural design.",
-    images: ["/images/project-4.png", "/images/project-1.png", "/images/project-3.png"],
+    images: ["/images/complex1.jpg", "/images/racecourse2.jpg" , "/images/racecourse1.jpg"],
     features: [
       "Versatile GRC Elements",
       "Multi-functional Architecture",
@@ -597,7 +561,7 @@ const projects: Project[] = [
     projectType: "Manufacturing Office Infrastructure",
     description:
       "Manufacturing office complex featuring industrial-grade GRC elements, functional design, and manufacturing-focused architecture. The project serves manufacturing industry needs with emphasis on functionality and industrial standards.",
-    images: ["/images/project-6.png", "/images/project-3.png", "/images/industrial-2.png"],
+    images: ["/images/dar1.jpg", "/images/dar2.jpg"],
     features: [
       "Industrial-grade GRC Elements",
       "Functional Design",
