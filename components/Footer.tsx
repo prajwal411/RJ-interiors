@@ -133,12 +133,6 @@ export default function Footer() {
                   <p className="text-sm text-text-secondary mb-1">Call Us:</p>
                   <div className="space-y-1">
                     <a
-                      href="tel:+917892142197"
-                      className="text-text-primary hover:text-gold-500 text-sm block transition-all duration-300"
-                    >
-                      +91 7892142197
-                    </a>
-                    <a
                       href="tel:+919900579417"
                       className="text-text-primary hover:text-gold-500 text-sm block transition-all duration-300"
                     >
@@ -180,9 +174,11 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-text-secondary mb-1">Location:</p>
                   <p className="text-white text-sm">
-                    Manufacturing Units
+                    No. 162/1, Sy No 21, BBMP Ward No:05
                     <br />
-                    Bangalore, Karnataka
+                    Venkateshwar Nagar, Sampigehalli Main Road
+                    <br />
+                    Post, Jakkur, Bengaluru, Karnataka 560064
                     <br />
                     India
                   </p>
@@ -224,6 +220,8 @@ export default function Footer() {
               </Link>
             </div>
           </div>
+          
+
         </div>
       </div>
     </footer>

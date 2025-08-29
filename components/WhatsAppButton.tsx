@@ -18,9 +18,9 @@ export default function WhatsAppButton() {
   }, [])
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "917892142197" // Main contact number
+    const phoneNumber = "919900579417" // Main contact number
     const message = encodeURIComponent(
-      "Hello! I'm interested in your construction services. Could you please provide more information?",
+      "Hello! I'm interested in your FRP and GRC services. Could you please provide more information?",
     )
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
     window.open(whatsappUrl, "_blank")

@@ -108,22 +108,16 @@ export default function ContactForm() {
                       <h4 className="font-semibold text-text-primary mb-1">Phone Numbers</h4>
                       <div className="space-y-1">
                         <a
-                          href="tel:+917892142197"
+                          href="tel:+919900579417"
                           className="block text-text-secondary hover:text-gold-500 transition-all duration-300"
                         >
-                          +91 78921 42197
+                          +91 9900579417
                         </a>
                         <a
-                          href="tel:+919845120009"
+                          href="tel:+916363385312"
                           className="block text-text-secondary hover:text-gold-500 transition-all duration-300"
                         >
-                          +91 98451 20009
-                        </a>
-                        <a
-                          href="tel:+919845062009"
-                          className="block text-text-secondary hover:text-gold-500 transition-all duration-300"
-                        >
-                          +91 98450 62009
+                          +91 6363385312
                         </a>
                       </div>
                     </div>
@@ -140,16 +134,16 @@ export default function ContactForm() {
                       <h4 className="font-semibold text-text-primary mb-1">Email Addresses</h4>
                       <div className="space-y-1">
                         <a
-                          href="mailto:rjinteriors2009@gmail.com"
+                          href="mailto:sandiil.k@rjinteriors.in"
                           className="block text-text-secondary hover:text-gold-500 transition-all duration-300"
                         >
-                          rjinteriors2009@gmail.com
+                          sandiil.k@rjinteriors.in
                         </a>
                         <a
-                          href="mailto:info@rjinteriors.com"
+                          href="mailto:grcbanglore@gmail.com"
                           className="block text-text-secondary hover:text-gold-500 transition-all duration-300"
                         >
-                          info@rjinteriors.com
+                          grcbanglore@gmail.com
                         </a>
                       </div>
                     </div>
@@ -165,9 +159,9 @@ export default function ContactForm() {
                     <div>
                       <h4 className="font-semibold text-text-primary mb-1">Office Address</h4>
                       <p className="text-text-secondary">
-                        #123, Industrial Area, Phase 2<br />
-                        Bangalore, Karnataka 560058
-                        <br />
+                        No. 162/1, Sy No 21, BBMP Ward No:05<br />
+                        Venkateshwar Nagar, Sampigehalli Main Road<br />
+                        Post, Jakkur, Bengaluru, Karnataka 560064<br />
                         India
                       </p>
                     </div>
@@ -327,6 +321,21 @@ export default function ContactForm() {
               )}
             </div>
           </FadeIn>
+
+          {/* Developer Credit */}
+          <div className="mt-12 pt-8 border-t border-gray-700 text-center">
+                          <p className="text-text-muted text-base">
+                Designed & Developed by{" "}
+                <span className="text-gold-500 font-semibold text-lg">Prajwal G</span>
+                {" "}• Contact:{" "}
+                <a 
+                  href="tel:+919741904642" 
+                  className="text-gold-500 hover:text-gold-400 transition-all duration-300 font-semibold text-lg"
+                >
+                  +91 9741904642
+                </a>
+              </p>
+          </div>
         </div>
       </div>
     </section>

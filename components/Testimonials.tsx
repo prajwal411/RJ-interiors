@@ -1,6 +1,5 @@
 "use client"
 import { useState, useEffect } from "react"
-import Image from "next/image"
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FadeIn } from "@/components/animations/fade-in"
@@ -8,59 +7,61 @@ import { FadeIn } from "@/components/animations/fade-in"
 const testimonials = [
   {
     id: 1,
-    name: "Rajesh Kumar",
-    position: "Project Manager",
-    company: "Prestige Group",
-    image: "/images/testimonial-1.png",
+    name: "Shaji Kaniyaparambil",
+    position: "Client",
+    company: "Google Reviews",
     rating: 5,
-    text: "RJ INTERIORS delivered exceptional GRC work for our luxury residential project. Their attention to detail and timely delivery exceeded our expectations. The jalis and columns they manufactured were of outstanding quality.",
-    project: "Prestige Lakeside Habitat",
+    text: "Their products are very good. For maintenance and repair they respond very soon, so according to me highly recommended.",
+    project: "GRC & FRP Products",
   },
   {
     id: 2,
-    name: "Priya Sharma",
-    position: "Architect",
-    company: "Brigade Group",
-    image: "/images/testimonial-2.png",
+    name: "Jaganathan K.R.",
+    position: "Local Guide",
+    company: "Google Reviews",
     rating: 5,
-    text: "Working with RJ INTERIORS was a pleasure. Their team understood our complex design requirements and delivered custom FRP solutions that perfectly matched our architectural vision. Highly recommended!",
-    project: "Brigade Cornerstone Utopia",
+    text: "They make very good Glass Fibre Reinforced Concrete panels and FRP panels.",
+    project: "GRC & FRP Manufacturing",
   },
   {
     id: 3,
-    name: "Mohammed Ali",
-    position: "Construction Head",
-    company: "L&T Construction",
-    image: "/images/testimonial-1.png",
+    name: "Scaria Thomas",
+    position: "Client",
+    company: "Google Reviews",
     rating: 5,
-    text: "The quality of GRC products from RJ INTERIORS is unmatched. We've used their services for multiple projects and they consistently deliver superior products on time. Their manufacturing facility is world-class.",
-    project: "Metro Station Facades",
+    text: "Varghese service very nice",
+    project: "GRC Services",
   },
   {
     id: 4,
-    name: "Anita Reddy",
-    position: "Interior Designer",
-    company: "Sobha Limited",
-    image: "/images/testimonial-2.png",
+    name: "Amal Mathewzzz",
+    position: "Client",
+    company: "Google Reviews",
     rating: 5,
-    text: "RJ INTERIORS transformed our vision into reality with their beautiful FRP planters and decorative elements. The customization options and quality craftsmanship are exceptional. Will definitely work with them again.",
-    project: "Sobha Dream Acres",
+    text: "Work and service is very good",
+    project: "GRC Products & Services",
   },
   {
     id: 5,
-    name: "Vikram Singh",
-    position: "Site Engineer",
-    company: "Godrej Properties",
-    image: "/images/testimonial-1.png",
+    name: "Shreya Theres John",
+    position: "Client",
+    company: "Google Reviews",
     rating: 5,
-    text: "Professional service from start to finish. RJ INTERIORS provided comprehensive solutions for our commercial project including GRC facades and FRP waterproofing. Their technical expertise is impressive.",
-    project: "Godrej Woodsville",
+    text: "Good work and service",
+    project: "GRC Solutions",
   },
 ]
 
 export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+
+  // Ensure currentTestimonial is within bounds
+  useEffect(() => {
+    if (currentTestimonial >= testimonials.length) {
+      setCurrentTestimonial(0)
+    }
+  }, [currentTestimonial, testimonials.length])
 
   useEffect(() => {
     if (!isAutoPlaying) return
@@ -122,32 +123,22 @@ export default function Testimonials() {
 
                 {/* Rating */}
                 <div className="flex justify-center mb-6">
-                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                  {testimonials[currentTestimonial] && [...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-gold-500 fill-current" />
                   ))}
                 </div>
 
                 {/* Testimonial Text */}
                 <blockquote className="text-lg md:text-xl text-text-secondary text-center mb-8 leading-relaxed">
-                  "{testimonials[currentTestimonial].text}"
+                  "{testimonials[currentTestimonial]?.text || ''}"
                 </blockquote>
 
                 {/* Client Info */}
-                <div className="flex items-center justify-center space-x-4">
-                  <div className="relative w-16 h-16 rounded-full overflow-hidden">
-                    <Image
-                      src={testimonials[currentTestimonial].image || "/placeholder.svg"}
-                      alt={testimonials[currentTestimonial].name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-text-primary">{testimonials[currentTestimonial].name}</h4>
-                    <p className="text-sm text-text-muted">{testimonials[currentTestimonial].position}</p>
-                    <p className="text-sm text-gold-500 font-medium">{testimonials[currentTestimonial].company}</p>
-                    <p className="text-xs text-text-muted mt-1">Project: {testimonials[currentTestimonial].project}</p>
-                  </div>
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold text-text-primary">{testimonials[currentTestimonial]?.name || ''}</h4>
+                  <p className="text-sm text-text-muted">{testimonials[currentTestimonial]?.position || ''}</p>
+                  <p className="text-sm text-gold-500 font-medium">{testimonials[currentTestimonial]?.company || ''}</p>
+                  <p className="text-xs text-text-muted mt-1">Project: {testimonials[currentTestimonial]?.project || ''}</p>
                 </div>
               </motion.div>
             </AnimatePresence>
@@ -192,19 +183,9 @@ export default function Testimonials() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-dark-primary p-6 rounded-xl shadow-lg border border-dark-accent"
               >
-                <div className="flex items-center mb-4">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-text-primary text-sm">{testimonial.name}</h4>
-                    <p className="text-xs text-text-muted">{testimonial.company}</p>
-                  </div>
+                <div className="mb-4">
+                  <h4 className="font-semibold text-text-primary text-sm">{testimonial.name}</h4>
+                  <p className="text-xs text-text-muted">{testimonial.company}</p>
                 </div>
                 <div className="flex mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
