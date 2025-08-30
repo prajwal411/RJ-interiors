@@ -268,7 +268,7 @@ export default function Partners() {
                       src={partner.logo || "/placeholder.svg"}
                       alt={partner.name}
                       fill
-                      className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain transition-all duration-300"
                     />
                   </div>
                   <div className="text-center">

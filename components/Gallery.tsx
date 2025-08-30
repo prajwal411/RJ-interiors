@@ -162,25 +162,6 @@ const projects: Project[] = [
 
   // Residential & Mixed-Use Projects
   {
-    id: 8,
-    title: "Brigade Eldorado – Bagalur",
-    category: "Residential & Mixed-Use",
-    location: "Bagalur, Bangalore",
-    year: "2023",
-    client: "Brigade Group",
-    projectType: "Luxury Residential",
-    description:
-      "Premium residential complex featuring elegant GRC architectural elements, decorative facades, and luxury finishes. The project combines modern amenities with aesthetic appeal, creating a sophisticated living environment that reflects contemporary lifestyle aspirations.",
-    images: ["/images/residential-1.png", "/images/project-2.png", "/images/project-5.png"],
-    features: [
-      "Luxury GRC Elements",
-      "Premium Finishes",
-      "Modern Architecture",
-      "Residential Amenities",
-      "Contemporary Design",
-    ],
-  },
-  {
     id: 9,
     title: "Shriram Greenfield – Bidarahalli",
     category: "Residential & Mixed-Use",
