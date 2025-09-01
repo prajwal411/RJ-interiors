@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { IN_STATES, IN_UNION_TERRITORIES } from "@/lib/india"
 import AnalyticsEvents from "@/components/AnalyticsEvents"
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -138,6 +139,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
+          <Analytics />
         </ThemeProvider>
         <AnalyticsEvents />
       </body>
