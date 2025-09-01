@@ -22,9 +22,14 @@ Crawl-delay: 1
 # Sitemap locations
 Sitemap: https://rjinteriors.in/sitemap.xml
 Sitemap: https://rjinteriors.in/sitemap-index.xml
+Sitemap: https://rjinteriors.in/sitemap-pages.xml
+Sitemap: https://rjinteriors.in/sitemap-services.xml
+Sitemap: https://rjinteriors.in/sitemap-products.xml
 Sitemap: https://rjinteriors.in/sitemap-all-cities.xml
 Sitemap: https://rjinteriors.in/sitemap-city-services.xml
 Sitemap: https://rjinteriors.in/sitemap-in-cities.xml
+Sitemap: https://rjinteriors.in/sitemap-images.xml
+Sitemap: https://rjinteriors.in/sitemap-cities-comprehensive.xml
 
 # Google specific directives
 User-agent: Googlebot

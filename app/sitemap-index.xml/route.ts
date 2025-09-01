@@ -41,6 +41,12 @@ export async function GET(req: NextRequest) {
       priority: "0.8"
     },
     {
+      loc: `${BASE_URL}/sitemap-south-india.xml`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: "0.8"
+    },
+    {
       loc: `${BASE_URL}/sitemap-city-services.xml`,
       lastmod: new Date().toISOString(),
       changefreq: "weekly",
@@ -51,6 +57,18 @@ export async function GET(req: NextRequest) {
       lastmod: new Date().toISOString(),
       changefreq: "monthly",
       priority: "0.6"
+    },
+    {
+      loc: `${BASE_URL}/sitemap-cities-comprehensive.xml`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: "0.8"
+    },
+    {
+      loc: `${BASE_URL}/sitemap-index.xml`,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: "0.9"
     }
   ]
 

@@ -44,6 +44,20 @@ export async function GET(req: NextRequest) {
   <lastmod>${new Date().toISOString()}</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.6</priority>
+</url>`,
+      // Commercial projects in city
+      `<url>
+  <loc>${new URL(`/in/${slug}/commercial-projects`, BASE_URL).toString()}</loc>
+  <lastmod>${new Date().toISOString()}</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+</url>`,
+      // Industrial solutions in city
+      `<url>
+  <loc>${new URL(`/in/${slug}/industrial-solutions`, BASE_URL).toString()}</loc>
+  <lastmod>${new Date().toISOString()}</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
 </url>`
     ]
     

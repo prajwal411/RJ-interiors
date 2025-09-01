@@ -11,6 +11,7 @@ export async function GET() {
     "Disallow: /staging/",
     "",
     `Sitemap: ${BASE_URL}/sitemap.xml`,
+    `Sitemap: ${BASE_URL}/sitemap-south-india.xml`,
   ]
   return new NextResponse(lines.join("\n"), {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

@@ -136,4 +136,57 @@ export const CITY_TO_STATE: Record<string, string> = {
   nagpur: "Maharashtra",
 }
 
+// South Indian cities organized by state
+export const SOUTH_INDIA_CITIES: Record<string, string[]> = {
+  "Karnataka": [
+    "Bangalore", "Mysore", "Mangalore", "Hubli", "Belgaum", "Davanagere", "Shimoga", "Tumkur", "Udupi", "Hassan",
+    "Bengaluru", "Mysuru", "Hubballi", "Belagavi", "Shivamogga", "Tumakuru", "Gulbarga", "Ballari", "Raichur", "Bidar",
+    "Mandya", "Chitradurga", "Kolar", "Chikkaballapur", "Chikkamagaluru", "Ramanagara", "Kodagu", "Dakshina Kannada",
+    "Uttara Kannada", "Chamrajnagar", "Yadgir", "Gadag", "Haveri", "Vijayapura", "Bagalkot", "Dharwad", "Koppal",
+    "Kalaburagi"
+  ],
+  "Tamil Nadu": [
+    "Chennai", "Coimbatore", "Madurai", "Trichy", "Tirunelveli", "Salem", "Vellore", "Erode", "Thanjavur",
+    "Tiruchirappalli", "Tiruppur", "Thoothukkudi", "Dindigul", "Kanchipuram", "Sivaganga", "Theni", "Viluppuram",
+    "Cuddalore", "Pudukkottai", "Nagapattinam", "Namakkal", "Karur", "Ramanathapuram", "Virudhunagar",
+    "Tiruvannamalai", "Krishnagiri", "Dharmapuri", "Ariyalur", "Perambalur", "Tiruvallur"
+  ],
+  "Kerala": [
+    "Kochi", "Trivandrum", "Kozhikode", "Kollam", "Thrissur", "Palakkad", "Alappuzha", "Kannur", "Kottayam",
+    "Thiruvananthapuram", "Ernakulam", "Pathanamthitta", "Idukki", "Wayanad", "Malappuram", "Kasaragod"
+  ],
+  "Andhra Pradesh": [
+    "Vijayawada", "Visakhapatnam", "Guntur", "Nellore", "Tirupati", "Kakinada", "Anantapur", "Rajahmundry",
+    "Kurnool", "Kadapa", "Eluru", "Ongole", "Chittoor", "Tenali", "Proddatur", "Bhimavaram", "Machilipatnam",
+    "Adoni", "Chilakaluripet", "Gudivada", "Narasaraopet", "Srikakulam", "Vizianagaram", "Parvathipuram",
+    "Nandyal", "Markapur", "Gudur", "Vinukonda", "Ponnur", "Repalle", "Bapatla", "Chirala", "Piduguralla",
+    "Mangalagiri", "Tadepalligudem", "Tadipatri", "Rayachoti", "Kadiri", "Madanapalle", "Puttaparthi",
+    "Hindupur", "Dharmavaram"
+  ],
+  "Telangana": [
+    "Hyderabad", "Warangal", "Karimnagar", "Nizamabad", "Khammam", "Mahbubnagar", "Adilabad", "Medak",
+    "Nalgonda", "Rangareddy", "Siddipet", "Jagtial", "Peddapalli", "Mancherial", "Asifabad", "Kumuram Bheem",
+    "Mulugu", "Bhadradri Kothagudem", "Suryapet", "Yadadri Bhuvanagiri", "Vikarabad", "Sangareddy", "Medchal",
+    "Malkajgiri", "Secunderabad", "Quthbullapur", "Serilingampally", "Rajendranagar", "Shamshabad", "Hayathnagar",
+    "Ghatkesar", "Uppal", "Lal Bahadur Nagar"
+  ]
+}
+
+// Priority South Indian cities as specified by the user
+export const PRIORITY_SOUTH_INDIA_CITIES: string[] = [
+  // Karnataka
+  "Bangalore", "Mysore", "Mangalore", "Hubli", "Belgaum", "Davanagere", "Shimoga", "Tumkur", "Udupi", "Hassan",
+  // Tamil Nadu
+  "Chennai", "Coimbatore", "Madurai", "Trichy", "Tirunelveli", "Salem", "Vellore", "Erode", "Thanjavur",
+  // Kerala
+  "Kochi", "Trivandrum", "Kozhikode", "Kollam", "Thrissur", "Palakkad", "Alappuzha", "Kannur", "Kottayam",
+  // Andhra Pradesh
+  "Vijayawada", "Visakhapatnam", "Guntur", "Nellore", "Tirupati", "Kakinada", "Anantapur", "Rajahmundry",
+  // Telangana
+  "Hyderabad", "Warangal", "Karimnagar", "Nizamabad", "Khammam", "Mahbubnagar"
+]
+
+// Flattened list of all South Indian cities
+export const ALL_SOUTH_INDIA_CITIES: string[] = Object.values(SOUTH_INDIA_CITIES).flat()
+
 

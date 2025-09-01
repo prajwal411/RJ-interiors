@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
   const urls = slice.map((city) => {
     const slug = city.toLowerCase().replace(/\s+/g, "-")
     const loc = new URL(`/locations/${slug}`, BASE_URL).toString()
-    return `<url>\n  <loc>${loc}</loc>\n  <changefreq>weekly</changefreq>\n  <priority>0.5</priority>\n</url>`
+    return `<url>\n  <loc>${loc}</loc>\n  <lastmod>${new Date().toISOString()}</lastmod>\n  <changefreq>weekly</changefreq>\n  <priority>0.7</priority>\n</url>`
   })
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>`

@@ -83,6 +83,25 @@ export default function CityServicePage({ params }: PageProps) {
     baseUrl: "https://rjinteriors.in",
   })
 
+  const faqs: Array<{ q: string; a: string }> = [
+    {
+      q: `What is the typical delivery time for ${serviceTitle} in ${cityTitle}?`,
+      a: `Standard lead times for ${serviceTitle} in ${cityTitle} are 10–21 days depending on design complexity and quantity. We manufacture in-house and schedule dispatches to ${cityTitle} 2–3 times per week for predictable timelines.`,
+    },
+    {
+      q: `Do you offer site measurement and installation support in ${cityTitle}?`,
+      a: `Yes. Our team can coordinate site measurements, shop drawings, and installation for ${serviceTitle} across ${cityTitle} and nearby districts. We also provide remote guidance and approved installer referrals where needed.`,
+    },
+    {
+      q: `What materials and finishes are available for ${serviceTitle}?`,
+      a: `${serviceTitle} can be produced in GRC/GFRC or FRP depending on application. Popular finishes include stone, textured, paint-ready, and custom colorways. We recommend finish options based on the project's climate and maintenance needs.`,
+    },
+    {
+      q: `Can you handle custom designs and large volumes?`,
+      a: `Absolutely. Our in-house molds and experienced fabrication team enable custom geometry and repeatable production. We maintain quality control with batch-based checks and provide packing suited for long-distance transport to ${cityTitle}.`,
+    },
+  ]
+
   const faqJsonLd = buildFAQJsonLd(faqs)
 
   const projectSnapshots = [
@@ -90,8 +109,6 @@ export default function CityServicePage({ params }: PageProps) {
     { src: "/images/frp-tanks-delhi.jpg", title: `${serviceTitle} for commercial site`, words: 70 },
     { src: "/images/income2.jpg", title: `${serviceTitle} custom install`, words: 70 },
   ]
-
-  const faqs: Array<{ q: string; a: string }> = [
     {
       q: `What is the typical delivery time for ${serviceTitle} in ${cityTitle}?`,
       a: `Standard lead times for ${serviceTitle} in ${cityTitle} are 10–21 days depending on design complexity and quantity. We manufacture in-house and schedule dispatches to ${cityTitle} 2–3 times per week for predictable timelines.`,
