@@ -93,7 +93,7 @@ const projects: Project[] = [
     projectType: "Military Medical Infrastructure",
     description:
       "Military hospital facility featuring specialized GRC and FRP elements designed for medical applications. The project includes antimicrobial surfaces, chemical-resistant materials, and architectural elements that support the unique requirements of military medical facilities.",
-    images: ["/images/CMH Hospital .jpg"],
+    images: ["/images/cmh-hospital.jpg"],
     features: [
       "Antimicrobial Surfaces",
       "Chemical Resistant",
