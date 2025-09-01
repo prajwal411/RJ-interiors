@@ -5,7 +5,7 @@ import SeoJsonLd from "@/components/SeoJsonLd"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import NearbyCities from "@/components/NearbyCities"
 import { CITY_TO_STATE } from "@/lib/india"
-import { buildPageMetadata, buildBreadcrumbsJsonLd, toTitleCase, buildImageAlt } from "@/lib/seo"
+import { buildPageMetadata, buildBreadcrumbsJsonLd, buildLocalBusinessJsonLd, buildFAQJsonLd, toTitleCase, buildImageAlt } from "@/lib/seo"
 
 type PageProps = {
   params: { city: string; service: string }
@@ -23,7 +23,26 @@ export function generateMetadata({ params }: PageProps): Metadata {
   })
   return {
     ...meta,
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
+    openGraph: {
+      ...meta.openGraph,
+      locale: "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/logo.png",
+          width: 1200,
+          height: 630,
+          alt: buildImageAlt({ productOrService: serviceSlug, city: citySlug }),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: ["/logo.png"],
+    },
   }
 }
 
@@ -52,10 +71,19 @@ export default function CityServicePage({ params }: PageProps) {
       "@type": "Organization",
       name: "RJ INTERIORS & CONSTRUCTIONS",
       url: "https://rjinteriors.in",
-      telephone: "+91-7892142197",
+      telephone: "+91-9900579417",
       email: "grcbanglore@gmail.com",
     },
   }
+
+  const localBusinessJsonLd = buildLocalBusinessJsonLd({
+    city,
+    state,
+    productOrService: service,
+    baseUrl: "https://rjinteriors.in",
+  })
+
+  const faqJsonLd = buildFAQJsonLd(faqs)
 
   const projectSnapshots = [
     { src: "/images/grc-jali-bengaluru.jpg", title: `${serviceTitle} at a local project`, words: 70 },
@@ -86,6 +114,8 @@ export default function CityServicePage({ params }: PageProps) {
     <main className="min-h-[70vh] pt-28 container mx-auto px-4">
       <SeoJsonLd data={breadcrumbs} />
       <SeoJsonLd data={serviceJsonLd} />
+      <SeoJsonLd data={localBusinessJsonLd} />
+      <SeoJsonLd data={faqJsonLd} />
 
       <Breadcrumbs
         items={[

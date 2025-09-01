@@ -44,6 +44,69 @@ export const PRIORITY_CITIES: string[] = [
   "Ahmedabad","Agra","Ajmer","Allahabad/Prayagraj","Amritsar","Aurangabad","Bareilly","Belagavi","Bengaluru","Bhopal","Bhubaneswar","Bilaspur","Chandigarh","Chennai","Coimbatore","Cuttack","Dehradun","Delhi","Dhanbad","Durgapur","Ernakulam","Faridabad","Gandhinagar","Ghaziabad","Guntur","Gurugram","Gwalior","Guwahati","Hubballi","Hyderabad","Indore","Jaipur","Jalandhar","Jalgaon","Jamshedpur","Jodhpur","Kakinada","Kanpur","Karur","Kochi","Kolhapur","Kolkata","Kollam","Kota","Kozhikode","Lucknow","Ludhiana","Madurai","Mangaluru","Meerut","Moradabad","Mumbai","Mysuru","Nagpur","Nashik","Navi Mumbai","Noida","Patna","Pimpri Chinchwad","Puducherry","Pune","Raipur","Rajkot","Ranchi","Rourkela","Salem","Siliguri","Solapur","Srinagar","Surat","Thane","Thiruvananthapuram","Thrissur","Tiruchirappalli","Tirunelveli","Tiruppur","Udaipur","Vadodara","Varanasi","Vijayawada","Visakhapatnam","Warangal"
 ]
 
+// Extended city data with SEO-friendly information
+export const CITY_SEO_DATA: Record<string, {
+  state: string
+  population: string
+  area: string
+  famousFor: string[]
+  nearbyCities: string[]
+  industries: string[]
+  seoKeywords: string[]
+  localContent: string
+}> = {
+  bengaluru: {
+    state: "Karnataka",
+    population: "12.3 million",
+    area: "741 sq km",
+    famousFor: ["IT Hub", "Garden City", "Startup Capital"],
+    nearbyCities: ["Mysuru", "Mangaluru", "Hubballi", "Belagavi"],
+    industries: ["Information Technology", "Biotechnology", "Manufacturing"],
+    seoKeywords: ["GRC products Bangalore", "FRP solutions Bengaluru", "construction materials Karnataka"],
+    localContent: "Bangalore, the Silicon Valley of India, is a major hub for construction and interior projects."
+  },
+  mumbai: {
+    state: "Maharashtra",
+    population: "20.4 million",
+    area: "603 sq km",
+    famousFor: ["Financial Capital", "Film Industry", "Gateway of India"],
+    nearbyCities: ["Pune", "Nashik", "Thane", "Navi Mumbai"],
+    industries: ["Finance", "Entertainment", "Manufacturing", "Port"],
+    seoKeywords: ["GRC products Mumbai", "FRP solutions Maharashtra", "construction materials Mumbai"],
+    localContent: "Mumbai, India's financial capital, offers diverse construction opportunities across residential and commercial sectors."
+  },
+  delhi: {
+    state: "Delhi (NCT)",
+    population: "20.9 million",
+    area: "1,484 sq km",
+    famousFor: ["Capital City", "Historical Monuments", "Political Center"],
+    nearbyCities: ["Gurugram", "Noida", "Ghaziabad", "Faridabad"],
+    industries: ["Government", "Services", "Manufacturing", "Education"],
+    seoKeywords: ["GRC products Delhi", "FRP solutions NCR", "construction materials Delhi"],
+    localContent: "Delhi NCR is a thriving metropolitan region with extensive construction and development projects."
+  },
+  hyderabad: {
+    state: "Telangana",
+    population: "9.7 million",
+    area: "650 sq km",
+    famousFor: ["Pearl City", "IT Hub", "Biryani"],
+    nearbyCities: ["Warangal", "Karimnagar", "Nizamabad", "Adilabad"],
+    industries: ["Information Technology", "Pharmaceuticals", "Manufacturing"],
+    seoKeywords: ["GRC products Hyderabad", "FRP solutions Telangana", "construction materials Hyderabad"],
+    localContent: "Hyderabad combines traditional heritage with modern development, creating unique construction opportunities."
+  },
+  chennai: {
+    state: "Tamil Nadu",
+    population: "10.9 million",
+    area: "426 sq km",
+    famousFor: ["Gateway to South", "Auto Hub", "Beaches"],
+    nearbyCities: ["Coimbatore", "Madurai", "Salem", "Tiruchirappalli"],
+    industries: ["Automotive", "Manufacturing", "IT", "Textiles"],
+    seoKeywords: ["GRC products Chennai", "FRP solutions Tamil Nadu", "construction materials Chennai"],
+    localContent: "Chennai is a major industrial and cultural center with diverse construction requirements."
+  }
+}
+
 // Basic city-to-state mapping for popular cities; can be expanded or sourced from CMS
 export const CITY_TO_STATE: Record<string, string> = {
   bengaluru: "Karnataka",

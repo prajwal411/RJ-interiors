@@ -78,8 +78,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google Search Console verification (replace with your token) */}
-        <meta name="google-site-verification" content="" />
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="jVNb6RvLRAWvxatd-C2VsmcLBCVfvE7xRONwYUM-YJA" />
         {/* GA4 (replace G-XXXXXXX) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
         <script
