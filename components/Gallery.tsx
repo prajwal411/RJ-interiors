@@ -447,7 +447,7 @@ const projects: Project[] = [
     projectType: "Temple Infrastructure",
     description:
       "Magnificent temple complex featuring traditional Vedic architecture with modern GRC construction. The project includes intricate carved elements, decorative columns, and architectural details that reflect the spiritual and cultural significance of the ISKCON tradition.",
-    images: ["/images/ISKCON Temple.jpg"],
+    images: ["/images/iskcon-temple.jpg"],
     features: [
       "Vedic Architecture",
       "Intricate GRC Carvings",
