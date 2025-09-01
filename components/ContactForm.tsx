@@ -324,17 +324,17 @@ export default function ContactForm() {
 
           {/* Developer Credit */}
           <div className="mt-12 pt-8 border-t border-gray-700 text-center">
-                          <p className="text-text-muted text-base">
-                Designed & Developed by{" "}
-                <span className="text-gold-500 font-semibold text-lg">Prajwal G</span>
-                {" "}• Contact:{" "}
-                <a 
-                  href="tel:+919741904642" 
-                  className="text-gold-500 hover:text-gold-400 transition-all duration-300 font-semibold text-lg"
-                >
-                  +91 9741904642
-                </a>
-              </p>
+            <p className="text-text-muted text-base">
+              Designed & Developed by{" "}
+              <span className="text-gold-500 font-semibold text-lg">Prajwal G</span>
+              {" "}• Contact:{" "}
+              <a 
+                href="tel:+919741904642" 
+                className="text-gold-500 hover:text-gold-400 transition-all duration-300 font-semibold text-lg"
+              >
+                +91 9741904642
+              </a>
+            </p>
           </div>
         </div>
       </div>
