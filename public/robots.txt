@@ -1,0 +1,47 @@
+User-agent: *
+Allow: /
+
+# Allow all city-specific pages
+Allow: /in/
+Allow: /locations/
+Allow: /services/
+Allow: /projects/
+
+# Allow sitemaps
+Allow: /sitemap*.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Sitemap locations
+Sitemap: https://rjinteriors.in/sitemap.xml
+Sitemap: https://rjinteriors.in/sitemap-index.xml
+Sitemap: https://rjinteriors.in/sitemap-all-cities.xml
+Sitemap: https://rjinteriors.in/sitemap-city-services.xml
+Sitemap: https://rjinteriors.in/sitemap-in-cities.xml
+
+# Google specific directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing specific directives
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex specific directives
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Baidu specific directives
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
