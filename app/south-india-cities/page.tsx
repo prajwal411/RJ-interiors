@@ -138,3 +138,53 @@ function getStateDescription(state: string): string {
   }
   return descriptions[state] || 'A key state in South India'
 }
+
+// Helper function to get city coordinates for structured data
+function getCityCoordinates(city: string): { lat: number; lng: number } {
+  const coordinates: Record<string, { lat: number; lng: number }> = {
+    'Bangalore': { lat: 12.9716, lng: 77.5946 },
+    'Chennai': { lat: 13.0827, lng: 80.2707 },
+    'Hyderabad': { lat: 17.3850, lng: 78.4867 },
+    'Kochi': { lat: 9.9312, lng: 76.2673 },
+    'Mysore': { lat: 12.2958, lng: 76.6394 },
+    'Mangalore': { lat: 12.9141, lng: 74.8560 },
+    'Hubli': { lat: 15.3647, lng: 75.1240 },
+    'Belgaum': { lat: 15.8497, lng: 74.4977 },
+    'Davanagere': { lat: 14.4644, lng: 75.9218 },
+    'Shimoga': { lat: 13.9299, lng: 75.5681 },
+    'Tumkur': { lat: 13.3409, lng: 77.1025 },
+    'Udupi': { lat: 13.3409, lng: 74.7421 },
+    'Hassan': { lat: 13.0049, lng: 76.1025 },
+    'Coimbatore': { lat: 11.0168, lng: 76.9558 },
+    'Madurai': { lat: 9.9252, lng: 78.1198 },
+    'Trichy': { lat: 10.7905, lng: 78.7047 },
+    'Tirunelveli': { lat: 8.7139, lng: 77.7567 },
+    'Salem': { lat: 11.6643, lng: 78.1460 },
+    'Vellore': { lat: 12.9165, lng: 79.1325 },
+    'Erode': { lat: 11.3410, lng: 77.7172 },
+    'Thanjavur': { lat: 10.7905, lng: 79.1374 },
+    'Trivandrum': { lat: 8.5241, lng: 76.9366 },
+    'Kozhikode': { lat: 11.2588, lng: 75.7804 },
+    'Kollam': { lat: 8.8932, lng: 76.6141 },
+    'Thrissur': { lat: 10.5276, lng: 76.2144 },
+    'Palakkad': { lat: 10.7867, lng: 76.6548 },
+    'Alappuzha': { lat: 9.4981, lng: 76.3388 },
+    'Kannur': { lat: 11.8745, lng: 75.3704 },
+    'Kottayam': { lat: 9.5916, lng: 76.5222 },
+    'Vijayawada': { lat: 16.5062, lng: 80.6480 },
+    'Visakhapatnam': { lat: 17.6868, lng: 83.2185 },
+    'Guntur': { lat: 16.2991, lng: 80.4575 },
+    'Nellore': { lat: 14.4426, lng: 79.9865 },
+    'Tirupati': { lat: 13.6288, lng: 79.4192 },
+    'Kakinada': { lat: 16.9891, lng: 82.2475 },
+    'Anantapur': { lat: 14.6819, lng: 77.6006 },
+    'Rajahmundry': { lat: 17.0005, lng: 81.8040 },
+    'Warangal': { lat: 17.9689, lng: 79.5941 },
+    'Karimnagar': { lat: 18.4386, lng: 79.1288 },
+    'Nizamabad': { lat: 18.6725, lng: 78.0941 },
+    'Khammam': { lat: 17.2473, lng: 80.1514 },
+    'Mahbubnagar': { lat: 16.7324, lng: 77.9979 }
+  }
+  
+  return coordinates[city] || { lat: 12.9716, lng: 77.5946 } // Default to Bangalore
+}

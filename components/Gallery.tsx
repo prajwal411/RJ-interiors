@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
@@ -570,6 +570,11 @@ export default function Gallery() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [activeTab, setActiveTab] = useState<"images" | "videos">("images")
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const filteredProjects =
     selectedCategory === "All" ? projects : projects.filter((project) => project.category === selectedCategory)
@@ -601,6 +606,10 @@ export default function Gallery() {
   const handleContactRedirect = () => {
     closeModal()
     router.push("/contact")
+  }
+
+  if (!isClient) {
+    return null // Or a loading spinner
   }
 
   return (

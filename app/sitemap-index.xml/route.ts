@@ -11,6 +11,12 @@ export async function GET(req: NextRequest) {
       priority: "1.0"
     },
     {
+      loc: `${BASE_URL}/sitemap-priority.xml`,
+      lastmod: new Date().toISOString(),
+      changefreq: "daily",
+      priority: "0.9"
+    },
+    {
       loc: `${BASE_URL}/sitemap-pages.xml`,
       lastmod: new Date().toISOString(),
       changefreq: "weekly",
