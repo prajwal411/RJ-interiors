@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Poppins } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -12,6 +12,10 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
 })
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rjinteriors.in"),
@@ -34,7 +38,6 @@ export const metadata: Metadata = {
     ],
     shortcut: "/logo.png",
   },
-  themeColor: "#0a0a0a",
   openGraph: {
     title: "RJ INTERIORS & CONSTRUCTIONS - GRC & FRP Experts",
     description: "Crafting Durability with Elegance - GRC & FRP Experts in Bangalore",
